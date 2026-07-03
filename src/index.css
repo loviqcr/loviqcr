@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose: #c85f80;
+  --color-rose-deep: #a8456a;
+  --color-plum: #8c5a93;
+  --color-gold: #c9a876;
+  --color-gold-deep: #a9895e;
+  --color-blush: #f8ede4;
+  --color-blush-deep: #efe0d3;
+  --color-ink: #2e2420;
+  --color-ink-soft: #7a6a62;
+
+  --font-script: "Segoe Script", "Bradley Hand", "Brush Script MT", cursive;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", Georgia, serif;
+  --font-body: Optima, Candara, "Segoe UI", Calibri, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-blush);
+}
