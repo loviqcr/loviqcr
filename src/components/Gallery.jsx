@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export default function Gallery() {
   return (
     <section className="bg-blush-deep py-24 px-6">
@@ -11,22 +13,22 @@ export default function Gallery() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2">
           <img
-            src="/loviq-scan.jpg"
+            src={`${base}loviq-scan.jpg`}
             alt="Escaneando la tarjeta Loviq JCS para abrir la página de recuerdos"
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />
           <img
-            src="/loviq-giftbox.jpg"
+            src={`${base}loviq-giftbox.jpg`}
             alt="Caja de regalo Loviq JCS con la libreta Nuestra Historia, la tarjeta QR y polaroids"
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />
           <img
-            src="/loviq-notebook.jpg"
+            src={`${base}loviq-notebook.jpg`}
             alt="Libreta Nuestra Historia con el logo Loviq JCS y un corazón dorado"
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />
           <img
-            src="/loviq-roses.jpg"
+            src={`${base}loviq-roses.jpg`}
             alt="Tarjeta Loviq JCS junto a rosas y velas, con la página de recuerdos en el celular"
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />

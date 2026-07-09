@@ -1,8 +1,10 @@
+const base = import.meta.env.BASE_URL;
+
 export default function Hero() {
   return (
     <section className="h-screen relative">
       <img
-        src="/loviq-roses.jpg"
+        src={`${base}loviq-roses.jpg`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -10,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/45" />
 
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-6">
-        <img src="/logo.png" alt="Loviq JCS" className="w-40 md:w-48 drop-shadow-lg" />
+        <img src={`${base}logo.png`} alt="Loviq JCS" className="w-40 md:w-48 drop-shadow-lg" />
 
         <h1 className="font-display text-4xl md:text-6xl mt-10 max-w-3xl text-balance">
           Convierte tus recuerdos en una experiencia inolvidable
