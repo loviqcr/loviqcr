@@ -32,7 +32,7 @@ export default function Features() {
         {steps.map((s) => (
           <div key={s.n} className="flex flex-col items-center text-center gap-4">
             <div className="relative flex h-14 w-14 items-center justify-center">
-              <svg viewBox="0 0 100 90" className="absolute inset-0 h-full w-full text-rose" fill="none" stroke="currentColor" strokeWidth="6">
+              <svg viewBox="-6 -6 112 100" className="absolute inset-0 h-full w-full text-rose" fill="none" stroke="currentColor" strokeWidth="6">
                 <path d="M50 88 C20 65,0 42,0 25 C0 8,15 0,30 0 C42 0,50 8,50 20 C50 8,58 0,70 0 C85 0,100 8,100 25 C100 42,80 65,50 88 Z" />
               </svg>
               <span className="relative font-body font-bold text-rose-deep">{s.n}</span>
