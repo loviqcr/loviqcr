@@ -28,6 +28,15 @@ export default function Gallery() {
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />
         </div>
+
+        <div className="mt-16 text-center">
+          <a
+            href="#precios"
+            className="inline-block rounded-full bg-gradient-to-r from-rose to-plum px-9 py-3.5 font-semibold tracking-wide text-white shadow-lg shadow-black/20 transition-transform hover:scale-105"
+          >
+            Empieza tu historia &hearts;
+          </a>
+        </div>
       </div>
     </section>
   );

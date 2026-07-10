@@ -2,14 +2,14 @@ const base = import.meta.env.BASE_URL;
 
 export default function Hero() {
   return (
-    <section className="h-screen relative">
+    <section id="inicio" className="h-screen relative">
       <img
         src={`${base}loviq-roses.jpg`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/15 to-black/55" />
 
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-6">
         <img src={`${base}logo.png`} alt="Loviq JCS" className="w-40 md:w-48 drop-shadow-lg" />
@@ -32,7 +32,7 @@ export default function Hero() {
           href="#cta"
           className="mt-10 inline-block rounded-full bg-gradient-to-r from-rose to-plum px-9 py-3.5 font-semibold tracking-wide text-white shadow-lg shadow-black/30 transition-transform hover:scale-105"
         >
-          Pide el tuyo
+          Crea tu Loviq
         </a>
       </div>
     </section>

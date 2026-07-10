@@ -5,19 +5,19 @@ const steps = [
 ];
 
 const occasions = [
-  "Aniversarios",
-  "Cumpleaños",
-  "San Valentín",
-  "Navidad",
-  "Graduaciones",
-  "Bodas",
-  "Despedidas",
-  "Y cualquier ocasión especial",
+  { icon: "💕", text: "Aniversarios" },
+  { icon: "🎂", text: "Cumpleaños" },
+  { icon: "🌹", text: "San Valentín" },
+  { icon: "🎄", text: "Navidad" },
+  { icon: "🎓", text: "Graduaciones" },
+  { icon: "💍", text: "Bodas" },
+  { icon: "✈️", text: "Despedidas" },
+  { icon: "✨", text: "Y cualquier ocasión especial" },
 ];
 
 export default function Features() {
   return (
-    <section className="bg-blush py-24 px-6">
+    <section id="como-funciona" className="bg-blush py-24 px-6">
       <div className="mx-auto max-w-3xl text-center">
         <p className="font-display italic text-2xl md:text-3xl text-ink text-balance">
           Más que un regalo,{" "}
@@ -42,15 +42,27 @@ export default function Features() {
         ))}
       </div>
 
-      <div className="mx-auto mt-24 max-w-4xl">
+      <div className="mx-auto mt-24 max-w-4xl text-center">
         <p className="text-center font-body text-xs tracking-[0.3em] uppercase text-rose-deep mb-8">
           Perfecto para
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {occasions.map((o) => (
-            <div key={o} className="text-sm text-ink-soft">{o}</div>
+            <div
+              key={o.text}
+              className="rounded-full border border-ink/5 bg-white/60 px-4 py-2.5 text-center text-sm text-ink-soft"
+            >
+              {o.icon} {o.text}
+            </div>
           ))}
         </div>
+
+        <a
+          href="#precios"
+          className="mt-12 inline-block rounded-full bg-gradient-to-r from-rose to-plum px-9 py-3.5 font-semibold tracking-wide text-white shadow-lg shadow-black/20 transition-transform hover:scale-105"
+        >
+          Quiero mi tarjeta
+        </a>
       </div>
 
       <div className="mx-auto mt-20 max-w-lg rounded-2xl border border-rose/30 bg-white/60 px-6 py-5 text-center">
