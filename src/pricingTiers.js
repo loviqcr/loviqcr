@@ -19,7 +19,6 @@ export const tiers = [
     badgeClass: 'bg-rose',
     features: ['Animación tipo video (MP4)', 'Música + efectos', 'Perfecta para cualquier evento'],
     featured: true,
-    example: 'ejemplo-invitacion.html',
   },
   {
     key: 'interactiva',
@@ -27,6 +26,5 @@ export const tiers = [
     badgeClass: 'bg-plum',
     features: ['Tipo link (estilo mini web)', 'Botón de ubicación', 'Confirmación de asistencia (RSVP)', 'Música + secciones'],
     featured: false,
-    example: 'ejemplo-invitacion.html',
   },
 ];
