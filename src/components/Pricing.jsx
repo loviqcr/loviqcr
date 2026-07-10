@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { usePricing } from '../hooks/usePricing';
 import { tiers } from '../pricingTiers';
 
@@ -9,6 +10,7 @@ function formatColones(amount) {
 
 export default function Pricing() {
   const prices = usePricing();
+  const [exampleUrl, setExampleUrl] = useState(null);
 
   return (
     <section id="precios" className="bg-blush py-24 px-6">
@@ -61,18 +63,43 @@ export default function Pricing() {
             </a>
 
             {tier.example && (
-              <a
-                href={`${base}${tier.example}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 block text-center text-sm text-ink-soft underline hover:text-rose-deep"
+              <button
+                type="button"
+                onClick={() => setExampleUrl(`${base}${tier.example}`)}
+                className="mt-3 block w-full text-center text-sm text-ink-soft underline hover:text-rose-deep"
               >
                 Ver ejemplo de invitación
-              </a>
+              </button>
             )}
           </div>
         ))}
       </div>
+
+      {exampleUrl && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/60 px-4 py-8"
+          onClick={() => setExampleUrl(null)}
+        >
+          <div
+            className="relative w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setExampleUrl(null)}
+              aria-label="Cerrar"
+              className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-ink shadow hover:bg-white"
+            >
+              ✕
+            </button>
+            <iframe
+              src={exampleUrl}
+              title="Ejemplo de invitación"
+              className="h-[80vh] w-full"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
