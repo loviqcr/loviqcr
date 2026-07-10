@@ -11,6 +11,7 @@ export const tiers = [
     badgeClass: 'bg-rose-deep',
     features: ['Diseño personalizado', 'Colores y temática a elección', 'Formato listo para compartir'],
     featured: false,
+    example: 'ejemplo-invitacion.html',
   },
   {
     key: 'animada',

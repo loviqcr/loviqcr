@@ -1,6 +1,8 @@
 import { usePricing } from '../hooks/usePricing';
 import { tiers } from '../pricingTiers';
 
+const base = import.meta.env.BASE_URL;
+
 function formatColones(amount) {
   return `₡${amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
 }
@@ -57,6 +59,17 @@ export default function Pricing() {
             >
               Quiero esta
             </a>
+
+            {tier.example && (
+              <a
+                href={`${base}${tier.example}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 block text-center text-sm text-ink-soft underline hover:text-rose-deep"
+              >
+                Ver ejemplo de invitación
+              </a>
+            )}
           </div>
         ))}
       </div>
