@@ -19,7 +19,6 @@ export const tiers = [
     badgeClass: 'bg-rose',
     features: ['Animación tipo video (MP4)', 'Música + efectos', 'Perfecta para cualquier evento'],
     featured: true,
-    example: 'ejemplo-animada.html',
   },
   {
     key: 'interactiva',
