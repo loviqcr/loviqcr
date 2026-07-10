@@ -26,5 +26,6 @@ export const tiers = [
     badgeClass: 'bg-plum',
     features: ['Tipo link (estilo mini web)', 'Botón de ubicación', 'Confirmación de asistencia (RSVP)', 'Música + secciones'],
     featured: false,
+    example: 'ejemplo-interactiva.html',
   },
 ];
