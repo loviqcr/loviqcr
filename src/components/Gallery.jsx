@@ -23,11 +23,6 @@ export default function Gallery() {
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
           />
           <img
-            src={`${base}loviq-notebook.jpg`}
-            alt="Libreta Nuestra Historia con el logo Loviq JCS y un corazón dorado"
-            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
-          />
-          <img
             src={`${base}loviq-roses.jpg`}
             alt="Tarjeta Loviq JCS junto a rosas y velas, con la página de recuerdos en el celular"
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-ink/10"
